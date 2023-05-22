@@ -13,4 +13,4 @@ const schema = new Schema(
   }
 );
 
-export const userSchema = new model("dogs", schema);
+export const dogsSchema = new model("dogs", schema);
