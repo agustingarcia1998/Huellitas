@@ -15,7 +15,7 @@ class PetsContainer {
 
     async getById(id) {
         try {
-            const petFound = await this.model.findOne(id);
+            const petFound = await this.model.findOne({_id: id});
             return petFound;
         } catch (error) {
             console.log(error.message);
@@ -24,7 +24,7 @@ class PetsContainer {
 
     async addPet(newPet) {
         try {
-            const petSave = await this.model.insertOne(newPet);
+            const petSave = await this.model.create(newPet);
             return petSave;
         } catch (error) {
             console.log(error.message);
@@ -33,11 +33,12 @@ class PetsContainer {
 
     async updateById(id, params) {
         try {
-            return this.model.updateOne(id, {params});
+          return this.model.updateOne({ _id: id }, params);
         } catch (error) {
-            console.log(error.message);
+          console.log(error.message);
+          throw error;
         }
-    }
+      }
 
     async deleteById(id) {
         try {
@@ -47,6 +48,7 @@ class PetsContainer {
 
         }
     }
+    
 
 
 }
