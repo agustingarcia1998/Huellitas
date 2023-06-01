@@ -6,7 +6,7 @@ class PetsContainer {
     async getAll(){
         try {
             const pets = await this.model.find();
-            console.log(pets);
+            // console.log(pets);
             return pets;
         } catch (error) {
             console.log(error.message);
