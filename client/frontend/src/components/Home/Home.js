@@ -1,16 +1,20 @@
 import React from 'react'
 import { Div } from './Styled'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import SideBarR from '../SideBarR/SideBarR'
+import SideBarL from '../SideBarL/SideBarL'
 
 
-const HomePage = () => {
+const Home = () => {
   return (
     <Div>
-        <h1>Home Page</h1>
-      <div className='divTitle'>
-      </div>
-
+        <Header/>
+        <SideBarL/>
+        <SideBarR/>
+        <Footer/>
     </Div>
   )
 }
 
-export default HomePage
+export default Home
