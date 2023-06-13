@@ -4,12 +4,12 @@ import { Div } from './Styled'
 const SideBarL = () => {
   return (
     <Div>
-        <div>
+        <div className='contAll'>
+          <h4 className='info'>Información</h4>
           <a>Inicio</a>
           <a>Sobre nosotros</a>
           <a></a>
-        </div>
-        <div>
+      
           <h4>En adopción</h4>
           <a>Gatos</a>
           <a>Perros</a>

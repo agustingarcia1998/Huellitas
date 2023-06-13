@@ -4,13 +4,11 @@ import { Div } from './Styled'
 const SideBarR = () => {
   return (
     <Div>
-      <div>
+      <div className='contProvi'>
+      <h4 className='info'>Información</h4>
       <a>Quiero ser provi!</a>
-      <p>envio de datos</p>
-      </div>
-      <div>
-      <p>Con tu colaboración nos ayudas mucho</p>
-      <a>Donaciones</a>
+      <p> Para colaborar🐾 </p>
+      <a>Doná acá</a>
       </div>
         
     </Div>

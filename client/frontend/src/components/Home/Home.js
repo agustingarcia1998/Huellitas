@@ -10,8 +10,10 @@ const Home = () => {
   return (
     <Div>
         <Header/>
+        <div className='sideBar'>
         <SideBarL/>
         <SideBarR/>
+        </div>
         <Footer/>
     </Div>
   )
