@@ -4,22 +4,9 @@ export const Div = styled.div`
 display: flex;
 
 
-.title {
-    
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-}
+.image{
+width: 100%;
+height: 50%;
 
-.subTitle {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    display: flex;
-}
-
-.desc {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    display: flex;
-    justify-content: flex-end;
 }
 `

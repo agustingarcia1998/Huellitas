@@ -14,7 +14,7 @@ const Home = () => {
         <SideBarL/>
         <SideBarR/>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </Div>
   )
 }

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
+padding-top: 10px;
 
 
 .contProvi{
@@ -8,7 +9,8 @@ display: flex;
 flex-direction: column;
 border: 1px solid white;
 border-radius: 15px;
-margin-left: 25px;
+margin-right: 25px;
+padding: 10px;
 background-color: #d49311; 
 }
 
