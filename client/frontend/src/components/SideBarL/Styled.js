@@ -6,9 +6,10 @@ padding-top: 10px;
 .contAll{
 display: flex;
 flex-direction: column;
-border: 1px solid white;
+border: 2px solid yellow;
 border-radius: 15px;
 margin-left: 25px;
+font-size: 23px;
 padding: 10px;
 background-color: #d49311;
 }

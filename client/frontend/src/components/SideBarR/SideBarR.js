@@ -7,7 +7,7 @@ const SideBarR = () => {
       <div className='contProvi'>
       <h4 className='info'>Información</h4>
       <a>Quiero ser provi!</a>
-      <p> Para colaborar🐾 </p>
+      <p>Colaboraciones🐾 </p>
       <a>Doná acá</a>
       </div>
         
