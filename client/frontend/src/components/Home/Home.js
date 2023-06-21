@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import SideBarR from '../SideBarR/SideBarR'
 import SideBarL from '../SideBarL/SideBarL'
+import Card from '../Card/Card'
 
 
 const Home = () => {
@@ -12,9 +13,10 @@ const Home = () => {
         <Header/>
         <div className='sideBar'>
         <SideBarL/>
+        <Card/>
         <SideBarR/>
         </div>
-        {/* <Footer/> */}
+        <Footer/>
     </Div>
   )
 }

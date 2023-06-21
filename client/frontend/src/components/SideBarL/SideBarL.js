@@ -8,8 +8,6 @@ const SideBarL = () => {
           <h4 className='info'>Información</h4>
           <a>Inicio</a>
           <a>Sobre nosotros</a>
-          <a></a>
-      
           <h4>En adopción</h4>
           <a>Gatos</a>
           <a>Perros</a>

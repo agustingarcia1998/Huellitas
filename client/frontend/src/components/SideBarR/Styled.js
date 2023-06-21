@@ -7,11 +7,11 @@ padding-top: 10px;
 .contProvi{
 display: flex;
 flex-direction: column;
-border: 2px solid yellow;
+border: 2px solid #a87601;
 border-radius: 15px;
-margin-right: 25px;
-padding: 10px;
-font-size: 23px;
+margin-right: 15px;
+padding: 5px;
+font-size: 20px;
 background-color: #d49311; 
 }
 

@@ -6,11 +6,11 @@ padding-top: 10px;
 .contAll{
 display: flex;
 flex-direction: column;
-border: 2px solid yellow;
+border: 2px solid #a87601;
 border-radius: 15px;
-margin-left: 25px;
-font-size: 23px;
-padding: 10px;
+margin-left: 15px;
+font-size: 20px;
+padding: 5px;
 background-color: #d49311;
 }
 
