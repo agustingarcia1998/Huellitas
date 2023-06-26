@@ -19,7 +19,7 @@ const Footer = () => {
           <p>Ambrosio olmos 1044</p>
         </div>
       </div>
-      <p>Hecho con ❤🐾 por Agustin</p>
+      <p>Hecho con ❤🐾 por <a href='https://www.linkedin.com/in/agustin-garcia-716865228/'>Agustin</a></p>
     </footer>
     </Div>
   )

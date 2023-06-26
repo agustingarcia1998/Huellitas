@@ -5,17 +5,15 @@ import Footer from '../Footer/Footer'
 import SideBarR from '../SideBarR/SideBarR'
 import SideBarL from '../SideBarL/SideBarL'
 import Card from '../Card/Card'
+import NavBar from '../NavBar/NavBar'
 
 
 const Home = () => {
   return (
     <Div>
         <Header/>
-        <div className='sideBar'>
-        <SideBarL/>
+        <NavBar/>
         <Card/>
-        <SideBarR/>
-        </div>
         <Footer/>
     </Div>
   )
