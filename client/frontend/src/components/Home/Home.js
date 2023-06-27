@@ -13,6 +13,7 @@ const Home = () => {
     <Div>
         <Header/>
         <NavBar/>
+        <SideBarR/>
         <Card/>
         <Footer/>
     </Div>

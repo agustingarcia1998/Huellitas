@@ -6,11 +6,7 @@ const SideBarL = () => {
     <Div>
         <div className='contAll'>
           <h4 className='info'>Información</h4>
-          <a>Inicio</a>
           <a>Sobre nosotros</a>
-          <h4>En adopción</h4>
-          <a>Gatos</a>
-          <a>Perros</a>
         </div>
     </Div>
   )
