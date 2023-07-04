@@ -1,13 +1,13 @@
 import React from 'react'
 import { Div } from './Styled'
 
-const Card = () => {
+const Card = ({name, description, age, size, img}) => {
   return (
     <Div>
-        <img />
-        <h2>Nombre</h2>
-        <h3>edad</h3>
-        <h3>descripción</h3>
+        <img src={img}/>
+        <h2>{name}</h2>
+        <h3>{description}</h3>
+        <h3>{age}</h3>
     </Div>
   )
 }

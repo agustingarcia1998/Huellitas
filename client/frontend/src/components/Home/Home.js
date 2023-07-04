@@ -3,9 +3,8 @@ import { Div } from './Styled'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import SideBarR from '../SideBarR/SideBarR'
-import SideBarL from '../SideBarL/SideBarL'
-import Card from '../Card/Card'
 import NavBar from '../NavBar/NavBar'
+import Lists from '../Lists/Lists'
 
 
 const Home = () => {
@@ -14,7 +13,7 @@ const Home = () => {
         <Header/>
         <NavBar/>
         <SideBarR/>
-        <Card/>
+        <Lists/>
         <Footer/>
     </Div>
   )
