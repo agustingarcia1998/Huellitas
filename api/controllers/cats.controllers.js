@@ -5,7 +5,7 @@ const catsManager = new PetsContainer(catsSchema);
 
 export const getAll = async (req, res) => {
  try {
-    let cats = await catsManager.getAll();
+    let cats = await catsManager.getAll(req.query.status);
     res.send(cats);  
  } catch (error) {
     console.log("cats not found");

@@ -13,10 +13,8 @@ export const Div = styled.div`
     justify-content: space-evenly;
 }
 
-.div2{
-    display: flex;
-    align-items: center;
-    margin: auto;
+.image{
+    
 }
 
 

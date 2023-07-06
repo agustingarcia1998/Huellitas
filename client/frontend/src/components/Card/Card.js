@@ -5,9 +5,10 @@ const Card = ({name, description, age, size, img}) => {
   return (
     <Div>
         <img src={img}/>
-        <h2>{name}</h2>
-        <h3>{description}</h3>
-        <h3>{age}</h3>
+        <h2>Nombre: {name}</h2>
+        <h4>Info: {description}</h4>
+        <h4>Edad: {age}</h4>
+        <h4>Tamaño: {size}</h4>
     </Div>
   )
 }

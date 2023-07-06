@@ -1,20 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    catSuccess: true,
-    isfetching: false,
-    error: false
-};
-
 export const usersSlice = createSlice({
-    name: "users",
-    initialState,
-    reducers: {
-        addUser: (state, action) => {
-            
-        },
-    }
+  name: "users",
+  initialState: {
+    userSuccess: null,
+    isfetching: false,
+    error: false,
+  },
+  reducers: {},
 });
 
-export const { addUser } = usersSlice.actions;
+export const {} = usersSlice.actions;
 export default usersSlice.reducer;

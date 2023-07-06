@@ -6,6 +6,8 @@ const schema = new Schema(
     age: { type: String, require: true },
     description: { type: String, require: true },
     size: { type: String, require: true },
+    thumbnail: { type: String, require: true},
+    status: { type: String, require: true}
   },
   {
     timestamps: true,

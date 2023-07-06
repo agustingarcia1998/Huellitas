@@ -1,25 +1,41 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { catsFetch } from '../../redux/actions/cats.actions'
-import Card from '../Card/Card';
-
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { catsFetch } from "../../redux/actions/cats.actions";
+import { dogsFetch } from "../../redux/actions/dogs.actions";
+import Card from "../Card/Card";
 
 const Lists = () => {
-    const dispatch = useDispatch();
-    const cats = useSelector((state) => state.cats)
-    
-    useEffect(() => {
-        catsFetch(dispatch)
-    }, [])
+  const dispatch = useDispatch();
+  const cats = useSelector((state) => state.cats);
 
+  useEffect(() => {
+    catsFetch(dispatch);
+  }, []);
+
+  const dogs = useSelector((state) => state.dogs);
+
+  useEffect(() => {
+    dogsFetch(dispatch);
+  }, []);
+  
+
+  const pets = cats.currentCat.concat(dogs.currentDog);
+  pets.sort(() => Math.random()-0.5)
   return (
     <div>
-        {cats.currentCat?.map( (cat) => 
-        <div key={cat.id}>
-            <Card name={cat.name} age={cat.age} description={cat.description} size={cat.size} img={cat.thumbnail}/>
-        </div> )}
+      {pets?.map((pet) => (
+        <div key={pet.id}>
+          <Card
+            name={pet.name}
+            age={pet.age}
+            description={pet.description}
+            size={pet.size}
+            img={pet.thumbnail}
+          />
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Lists
+export default Lists;
