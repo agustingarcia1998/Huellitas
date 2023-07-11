@@ -5,7 +5,7 @@ const dogsManager = new PetsContainer(dogsSchema);
 
 export const getAll = async (req, res) => {
  try {
-    let dogs = await dogsManager.getAll();
+    let dogs = await dogsManager.getAll(req.query.status);
     res.send(dogs);  
  } catch (error) {
     console.log("dogs not found");

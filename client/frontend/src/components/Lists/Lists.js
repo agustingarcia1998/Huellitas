@@ -30,7 +30,9 @@ const Lists = () => {
             age={pet.age}
             description={pet.description}
             size={pet.size}
+            status={pet.status}
             img={pet.thumbnail}
+
           />
         </div>
       ))}

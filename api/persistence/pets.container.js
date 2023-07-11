@@ -3,11 +3,18 @@ class PetsContainer {
         this.model = model;
     }
 
-    async getAll(){
+    async getAll(status){
         try {
-            const pets = await this.model.find();
-            // console.log(pets);
+            let pets = [];
+            if(status){
+                pets = await this.model.find({
+                    status: status
+                });
+            }else{
+                pets = this.model.find();
+            }
             return pets;
+            // console.log(pets);
         } catch (error) {
             console.log(error.message);
         }
