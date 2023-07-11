@@ -13,9 +13,7 @@ export const Div = styled.div`
     justify-content: space-evenly;
 }
 
-.image{
-    
-}
+
 
 
 `
