@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { catsFetch } from "../../redux/actions/cats.actions";
 import { dogsFetch } from "../../redux/actions/dogs.actions";
 import Card from "../Card/Card";
+import { Div } from "./Styled";
 
 const Lists = () => {
   const dispatch = useDispatch();
@@ -17,12 +18,11 @@ const Lists = () => {
   useEffect(() => {
     dogsFetch(dispatch);
   }, []);
-  
 
   const pets = cats.currentCat.concat(dogs.currentDog);
-  pets.sort(() => Math.random()-0.5)
+  pets.sort(() => Math.random() - 0.5);
   return (
-    <div>
+    <Div>
       {pets?.map((pet) => (
         <div key={pet.id}>
           <Card
@@ -32,11 +32,10 @@ const Lists = () => {
             size={pet.size}
             status={pet.status}
             img={pet.thumbnail}
-
           />
         </div>
       ))}
-    </div>
+    </Div>
   );
 };
 

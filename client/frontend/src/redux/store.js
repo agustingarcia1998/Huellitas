@@ -13,6 +13,7 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import usersSlice from './Slices/users.slice'
 import catsSlice from './Slices/cats.slice'
 import dogsSlice from './Slices/dogs.slice'
+import createPetSlice from "./Slices/createPet.slice";
 
 
 const persistConfig = {
@@ -24,7 +25,8 @@ const persistConfig = {
   const rootReducer = combineReducers({
         cats: catsSlice,
         dogs: dogsSlice,
-        users: usersSlice
+        users: usersSlice,
+        createPet: createPetSlice
   });
   
   const persistedReducer = persistReducer(persistConfig, rootReducer);

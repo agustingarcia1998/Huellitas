@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-display: flex;
+display: column;
 justify-content: space-between;
+
 `

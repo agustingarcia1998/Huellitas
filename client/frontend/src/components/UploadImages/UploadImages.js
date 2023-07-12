@@ -24,7 +24,7 @@ const UploadImages = () => {
   return (
     <Div>
       <button className="button" onClick={() => widgetRef.current.open()}>
-        Foto
+      Adjuntar Imagen Mascota
       </button>
     </Div>
   );

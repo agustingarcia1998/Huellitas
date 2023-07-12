@@ -10,12 +10,12 @@ import FormCreate from "../FormCreate/FormCreate";
 const Home = () => {
   return (
     <Div>
-      <FormCreate/>
-      {/* <Header />
+      {/* <FormCreate/> */}
+      <Header />
       <NavBar />
       <SideBarR />
       <Lists />
-      <Footer /> */}
+      <Footer />
     </Div>
   );
 };
