@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import image from "../../file/fondohuellitasmarron.jpg";
 export const Div = styled.div`
-  // background-image: ${image};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  width: 50%;
-  margin: auto;
+  background-image: url(${image});
+
+  .contAll {
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+  }
 
   .cont-formStatus {
     margin-bottom: 15px;
