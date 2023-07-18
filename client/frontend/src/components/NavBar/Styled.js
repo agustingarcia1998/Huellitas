@@ -25,19 +25,33 @@ export const Div = styled.div`
 
 }
 
-.navs-sections {
-   
+.buttonForm{
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-color: #707070;
+    margin-left: 20px;
+}
+
+.buttonForm:hover{
+    background-color: orange;
+    color: black;
 }
 
 .btn-search{
     border: 2px solid;
+    border-radius: 10px;
     color: white;
     border-color: #707070;
 }
 
 .btn-search:hover{
     background-color: orange;
+    color: black;
 }
+
+
 
 
 

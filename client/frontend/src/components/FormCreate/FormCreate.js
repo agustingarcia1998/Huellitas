@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Div } from "./Styled";
 import UploadImages from "../UploadImages/UploadImages.js";
 import { useNavigate } from "react-router-dom";
@@ -8,8 +8,52 @@ import { useDispatch, useSelector } from "react-redux";
 const FormCreate = () => {
   let navigate = useNavigate();
 
-  // const dispatch = useDispatch();
-  // const petCreated = useSelector((state) => state.pets);
+  const dispatch = useDispatch();
+  const petCreated = useSelector((state) => state.pets);
+
+  const [input, setInput] = useState({
+    name: "",
+    age: "",
+    description: "",
+    size: "",
+    thumbnail: "",
+    status: ""
+  })
+
+  function validate(input){
+    let error = {}
+
+    if(!input.name) {
+        error.name = 'Es necesario agregar un nombre'
+    } 
+
+    if(!input.age) {
+        error.age = 'Es necesario agregar una edad'
+    } 
+
+    if(!input.description) {
+        error.description = 'Es necesario agregar una descripción'
+    } 
+
+    if(!input.size) {
+        error.size = 'Es necesario agregar un tamaño'
+    }
+
+    if(!input.status) {
+        error.status = 'Es necesario agregar un estado'
+    }
+    
+     
+
+    return error
+}
+
+  function handleChange(e){
+      setInput({
+        ...input,
+        [e.target.name] :  e.target.value,
+      });
+  }
 
   // useEffect(() => {
   //   createPetFetch(dispatch);
