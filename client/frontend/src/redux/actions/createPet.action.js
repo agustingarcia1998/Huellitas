@@ -7,12 +7,13 @@ import {
 
 export const createPetFetch = async (dispatch, payload) => {
   dispatch(startCreatePet());
+  console.log(payload);
   try {
-    if (payload.type === "cat") {
-      const res = await axios.post("https://localhost:8000/api/cats", payload);
+    if (payload.type === "Cat") {
+      const res = await axios.post("http://localhost:8000/api/cats", payload);
       dispatch(successCreatePet(res.data));
-    } else if (payload.type === "dog") {
-      const res = await axios.post("https://localhost:8000/api/dogs", payload);
+    } else if (payload.type === "Dog") {
+      const res = await axios.post("http://localhost:8000/api/dogs", payload);
       dispatch(successCreatePet(res.data));
     }
   } catch (error) {
