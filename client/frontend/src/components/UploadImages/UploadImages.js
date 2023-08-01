@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Div } from "./Styled";
 
-const UploadImages = () => {
+const UploadImages = ({input, setInput}) => {
   const cloudinaryRef = useRef();
   const widgetRef = useRef();
   // const [image, setImage] = useState("");
@@ -16,6 +16,10 @@ const UploadImages = () => {
       function (error, result) {
         if (!error && result && result.event === "success") {
           console.log(result.info.secure_url);
+          setInput({
+            ...input,
+            thumbnail: result.info.secure_url
+          })
         }
       }
     );
@@ -24,7 +28,7 @@ const UploadImages = () => {
   return (
     <Div>
       <button className="button" onClick={() => widgetRef.current.open()}>
-      Adjuntar Imagen Mascota
+      Adjuntar Imagen Mascota y agregar
       </button>
     </Div>
   );

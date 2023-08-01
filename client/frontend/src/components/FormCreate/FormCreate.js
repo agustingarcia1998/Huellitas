@@ -101,7 +101,7 @@ const FormCreate = () => {
             <label for="floatingSelectDisabled">Clase de mascota 🐾</label>
           </div>
           <label className="contUpload">
-            <UploadImages />
+            <UploadImages setInput={setInput} input={input}/>
           </label>
           <div className="contButtons">
             <button
@@ -113,9 +113,9 @@ const FormCreate = () => {
             >
               Volver
             </button>
-            <button className="buttonSubmit" type="submit">
+            {/* <button className="buttonSubmit" type="submit">
               Agregar
-            </button>
+            </button> */}
           </div>
         </div>
       </form>

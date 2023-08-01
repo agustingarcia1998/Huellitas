@@ -12,4 +12,10 @@ margin: auto;
 margin-top: 25px;
 margin-bottom: 25px;
 padding:5px;
+
+.contImg{
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+}
 `
